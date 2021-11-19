@@ -7,7 +7,7 @@
   /* Que ocupe todo el ancho disponible */
   width: 100%;
   background-color: black;
-  /* Los ponemos uno al lado del otro */
+  /* Ponemos una al lado de la otra a sus hijas */
   display: flex;
   /* Mandamos uno a cada punta */
   justify-content: space-between;
@@ -17,31 +17,58 @@
 .header-logo {
   height: 40px;
 }
+/* En mobile escondemos el menú con palabras, solo icono */
 .header-nav {
-  color: white;
+  display: none;
 }
 .header-menu-icon {
   width: 20px;
 }
-/* -----------------------------------------------HERO-------------------- */
-.hero {
-  background-image:url(../images/premium_dancer.png)
+
+.main {
+  /* Por ahora, bajamos el main la altura del header para que no se pisen */
+  margin-top: 40px;
 }
 
-/* En mobile el listado de menú no se ve, en lugar de eso el icono de menú hamburguesa */
-/* .nav {
-  display: none;
+.hero {
+  background-color: #529cf1;
 }
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer {
+  background-color: black;
+  color: white;
+}
+
 /* A partir de tablet aparece el listado de menú con palabras, sin logo */
-/* @media all and (min-width: 768px) {
-  .hamb {
+@media all and (min-width: 768px) {
+  .header-menu-icon {
     display: none;
   }
-  .nav {
+  .header-nav {
     display: block;
   }
   /* Colocamos uno al lado del otro */
-  /* .list{
-      display: flex;
+  .header-nav-list {
+    display: flex;
   }
-}  */
+  /* El listado de artículos es horizontal con 2 filas */
+  .article-list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .article-item {
+    width: 50%;
+  }
+}
+/* A partir de desktop el listado de artículos es horizontal */
+@media all and (min-width: 1200px) {
+  .article-list {
+    flex-wrap: nowrap;
+  }
+}
