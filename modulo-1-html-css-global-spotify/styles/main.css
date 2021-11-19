@@ -1,0 +1,47 @@
+.header {
+  /* Fijamos la cabecera */
+  position: fixed;
+  /* Que se pegue arriba e izq */
+  top: 0;
+  left: 0;
+  /* Que ocupe todo el ancho disponible */
+  width: 100%;
+  background-color: black;
+  /* Los ponemos uno al lado del otro */
+  display: flex;
+  /* Mandamos uno a cada punta */
+  justify-content: space-between;
+  /* Centramos forma vertical */
+  align-items: center;
+}
+.header-logo {
+  height: 40px;
+}
+.header-nav {
+  color: white;
+}
+.header-menu-icon {
+  width: 20px;
+}
+/* -----------------------------------------------HERO-------------------- */
+.hero {
+  background-image:url(../images/premium_dancer.png)
+}
+
+/* En mobile el listado de menú no se ve, en lugar de eso el icono de menú hamburguesa */
+/* .nav {
+  display: none;
+}
+/* A partir de tablet aparece el listado de menú con palabras, sin logo */
+/* @media all and (min-width: 768px) {
+  .hamb {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
+  /* Colocamos uno al lado del otro */
+  /* .list{
+      display: flex;
+  }
+}  */
