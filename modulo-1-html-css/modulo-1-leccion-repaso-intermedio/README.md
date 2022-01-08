@@ -1,4 +1,4 @@
-##El rojo más perfecto del año
+## El rojo más perfecto del año
 
 El servicio municipal de bomberos ya no puede soportar más el desprecio de Pantone al no seleccionar su rojo corporativo para su Color of the year.
 
