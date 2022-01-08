@@ -2,8 +2,6 @@
 
 ## Programación Front-End
 
-#### Entendiendo la estructura del repo:
-
 **Módulo 1: Maquetación HTML, CSS y SCSS:**
 
 - 1.1 Introducción a la web
