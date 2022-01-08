@@ -1,0 +1,33 @@
+/* header {
+    background-color: gainsboro;
+    height: 10vh;
+}
+main {
+    background-color: gray;
+    height: 80vh;
+}
+footer {
+    height: 10vh;
+    background-color: rgba(216, 164, 23, 0.507);
+} */
+
+/* OPCIÓN USANDO MIN-HEIGHT */
+/* El body tendrá como mínimo toda la pantalla visible, luego asignamos cómo se reparte el espacio sobrante con la propiedad flex-grow */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: gainsboro;
+  flex-grow: 0.5;
+}
+main {
+  background-color: gray;
+  flex-grow: 5;
+}
+footer {
+  background-color: rgba(216, 164, 23, 0.507);
+  flex-grow: 0.5;
+}

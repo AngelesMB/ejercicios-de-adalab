@@ -1,0 +1,21 @@
+/* Nota: recordad que para que el overflow se active, el contenedor tiene que tener definidas dimensiones (o ser un elemento de bloque y que el contenido sobrepase el ancho del contenedor) */
+
+.container {
+  border: 1px solid deeppink;
+}
+.col {
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+}
+.container--1 {
+  height: 100px;
+  width: 200px;
+  /* Ejemplo overflow hidden */
+  overflow: hidden;
+}
+.container--2 {
+  height: 200px;
+  /* Ejemplo overflow scroll */
+  overflow: scroll;
+}

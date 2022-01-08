@@ -1,0 +1,16 @@
+.container {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: rosybrown;
+}
+.article {
+  border: 1px solid black;
+  width: 50%;
+  box-sizing: border-box;
+}
+.art-5 {
+  order: -1;
+  width: 100%;
+}

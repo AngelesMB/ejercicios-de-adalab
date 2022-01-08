@@ -1,0 +1,29 @@
+body {
+  max-width: 960px;
+  text-align: center;
+}
+header {
+  background-color: tomato;
+  min-height: 5vh;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.aside-1 {
+  background-color: yellow;
+  min-width: 10%;
+}
+article {
+  background-color: aqua;
+  min-height: 10vh;
+}
+.aside-2 {
+  background-color: palevioletred;
+  min-width: 10%;
+}
+footer {
+  background-color: rgb(109, 230, 129);
+  min-height: 5vh;
+}

@@ -1,0 +1,51 @@
+:root {
+  --titleColor: grey;
+  --navColor: green;
+  --padding: 20px;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #eaeaea;
+  padding: var(--padding);
+}
+
+main {
+  padding: var(--padding);
+}
+
+p {
+  width: 50%;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.title {
+  color: var(--titleColor);
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--titleColor);
+  margin: 0;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  color: var(--navColor);
+  text-decoration: none;
+}
+
+p a {
+  color: var(--navColor);
+}

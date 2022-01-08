@@ -1,0 +1,15 @@
+.main {
+    &__section {
+        background-color: rgb(184, 141, 224);
+        height: 50vh;
+        text-align: center;
+    }
+    &__section2 {
+        background-color: burlywood;
+    }
+    &__button {
+        background-color: red;
+        border-radius: 5px;
+        height: 45px;
+    }
+}

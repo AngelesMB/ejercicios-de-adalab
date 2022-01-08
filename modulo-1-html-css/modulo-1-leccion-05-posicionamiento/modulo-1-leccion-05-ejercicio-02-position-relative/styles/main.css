@@ -1,0 +1,27 @@
+.div1,
+.div2,
+.div3 {
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  padding: 30px;
+  position: relative;
+}
+/* El div 1 deberá desplazarse 100 píxeles a la derecha y 50 píxeles hacia abajo respecto a lo que sería su posición normal.*/
+.div1 {
+  background-color: aquamarine;
+  left: 100px;
+  top: 50px;
+}
+/* El div 2 deberá desplazarse 150 píxeles a la izquierda y 320 píxeles hacia arriba respecto a lo que sería su posición normal. */
+.div2 {
+  background-color: cadetblue;
+  right: 150px;
+  bottom: 320px;
+}
+/* El div 3 deberá desplazarse 180 píxeles a la derecha y 240 píxeles hacia arriba respecto a lo que sería su posición normal. */
+.div3 {
+  background-color: coral;
+  left: 180px;
+  bottom: 240px;
+}

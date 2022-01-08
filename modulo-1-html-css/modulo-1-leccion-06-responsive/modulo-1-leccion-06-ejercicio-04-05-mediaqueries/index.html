@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Probar añadir y quitar esto y usar el simulador del inspect de chrome. Sin él, las mediaqueries no aplican -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viewport Sample</title>
+    <style>
+      .box {
+        background: red;
+        height: 100px;
+      }
+      /* Añadamos nuestra primera mediaquery: vamos a hacer que por encima de 550px el elemento .box tenga fondo azul. Para ello el CSS dentro de nuestra etiqueta <style> quedará así: */
+      @media all and (min-width: 550px) {
+        .box {
+          background: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

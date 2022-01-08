@@ -1,0 +1,23 @@
+* {
+  margin: 8px;
+}
+form {
+  background-color: #f1f1f1;
+}
+label {
+  font-weight: bold;
+}
+input,
+label {
+  display: block;
+}
+.inlineField {
+  display: inline;
+}
+.label.hidden {
+  display: none;
+}
+.longerField {
+  width: 220px;
+}
+

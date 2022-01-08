@@ -1,0 +1,61 @@
+/* Vamos a empezar con el CSS de móvil e iremos ajustando los estilos según dispongamos de mayores tamaños de pantalla:
+Por defecto:
+Nuestro contenedor tendrá 20px de margen a cada lado
+El título estará en negrita y a 32px
+El texto de los párrafos estará a 18px con un interlineado de 24px*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* MOBILE FIRST */
+.container {
+  background-color: lavenderblush;
+  margin: 0 20px;
+}
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+/* De 768px en adelante:
+Nuestro contenedor tendrá 30px de margen superior y 40px de margen a cada lado
+El título estará en negrita y a 28px
+El texto de los párrafos estará a 16px con un interlineado de 20px */
+@media all and (min-width: 768px) {
+  .container {
+    background-color: lightcoral;
+    margin: 30px 40px 0 40px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* De 1140px en adelante:
+Nuestro contenedor tendrá 190px de margen superior y margen automático a cada lado, con un ancho máximo de 750px
+El título estará en negrita y a 42px
+El texto de los párrafos estará a 24px con un interlineado de 32px */
+@media all and (min-width: 1140px) {
+  .container {
+    background-color: cornflowerblue;
+    margin: 190px auto 0 auto;
+    max-width: 750px;
+  }
+  h1 {
+    font-size: 42px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

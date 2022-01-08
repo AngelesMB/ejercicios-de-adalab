@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  max-width: 840px;
+  display: flex;
+}
+.container-img {
+  width: 100px;
+  background-image: url("../images/square.png");
+  border-radius: 5px;
+  margin: 5px;
+}
+.container-middle {
+  flex-grow: 1;
+  background-color: rgb(240, 240, 240);
+}
+.container-ranking {
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-sm-points {
+  background-color: rgb(172, 169, 169);
+  border-radius: 5px;
+  height: 50%;
+  text-align: center;
+}
+.p-gray {
+  color: gray;
+}
+.ranking-stars {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.ranking-comments {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.img-star {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

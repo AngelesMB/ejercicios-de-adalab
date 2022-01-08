@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font: 16px arial, sans-serif;
+  background: #414141;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button {
+  text-decoration: none;
+  line-height: 60px;
+  padding: 0 30px;
+  border-radius: 30px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background: #8a8a8a;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.22);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29),
+    inset 1px 1px 1px rgba(255, 255, 255, 0.44);
+  /*  Añade transiciones para que el coloreado y el sombreado no sean tan bruscos en hover y click  */
+  transition: background 2s, box-shadow 2s;
+}
+
+.button:hover {
+  background: #6b8f1a;
+  /* Añade transiciones para modificar alguna propiedad (tamaño, redondeado, color de fuente...) */
+  color: blue;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29),
+    inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.button:active {
+  background: red;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.29),
+    inset 1px 1px 3px rgba(0, 0, 0, 0.8);
+}

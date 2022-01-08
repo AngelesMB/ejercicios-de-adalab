@@ -1,0 +1,15 @@
+form {
+  background-color: #f1f1f1;
+}
+label {
+  font-weight: bold;
+}
+input,
+label,
+select {
+  display: block;
+  margin: 5px;
+}
+.emailPlaceholder::placeholder {
+  text-align: right;
+}

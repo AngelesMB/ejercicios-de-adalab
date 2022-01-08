@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+.container-maxwidth {
+  background: pink;
+  display: flex;
+  height: 200px;
+  justify-content: space-between;
+  height: 50%;
+}
+.main,
+.aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 16px "Comic Sans MS", arial, sans-serif;
+}
+.main {
+  background: cyan;
+  flex: 1;
+}
+.aside {
+  background: deeppink;
+  width: 50%;
+  max-width: 320px;
+}
+/* --------------------------------------------------- */
+
+.news {
+  margin: 2em auto 0;
+  width: 400px;
+  border: 1px solid red;
+  padding: 1em;
+}
+.news__image {
+  width: 100%;
+}
+/*Prueba a duplicar el texto en el html a ver qué pasa con su contenedor*/
+
+.news__content {
+  border: 1px dashed pink;
+  max-height: 222px;
+  padding: 0 0.5em;
+  overflow-y: auto;
+}

@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .container {
+    background-color: yellow;
+  }
+}
+@media all and (min-width: 768px) {
+  .container {
+    background-color: green;
+  }
+}

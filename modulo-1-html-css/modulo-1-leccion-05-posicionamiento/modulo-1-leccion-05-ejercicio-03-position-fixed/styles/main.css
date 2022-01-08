@@ -1,0 +1,16 @@
+/* Añadir fondo morado a la cabecera y hacer que se mantenga fija arriba.*/
+header {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(164, 98, 226);
+  position: fixed;
+}
+/* Hacer que la cabecera no tape el contenedor principal cuando no hemos hecho scroll, sin utilizar margin ni padding (PISTA: posiciona el contenedor principal). */
+main {
+  position: absolute;
+  top: 50px;
+}
+/* Hacer que cuando la usuaria haga scroll, la cabecera se apile o superponga por encima del contenedor principal. */
+header {
+  z-index: 1;
+}

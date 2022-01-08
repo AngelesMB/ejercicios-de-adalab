@@ -1,0 +1,61 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --colorPpal: #cc212a;
+  --fontPpal: "Montserrat", sans-serif;
+}
+.main {
+  /* Altura total en 100vh porque 100% cogería la totalidad de su contenedor y no de la página */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Centramos en ejes principal y secundario */
+  justify-content: center;
+  align-items: center;
+  /* El color aquí directamente o sino en los p. CUIDADO, hay elementos como <a> que no cogerían la herencia de main */
+  color: var(--colorPpal);
+  font-family: var(--fontPpal);
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 3px solid var(--colorPpal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--fontPpal);
+  padding-bottom: 25px;
+}
+.icon {
+  background-color: var(--colorPpal);
+  /* Creamos un cuadrado rojo 'de fondo' */
+  height: 50px;
+  width: 50px;
+  /* Centramos de forma vertical */
+  line-height: 50px;
+  /* Centramos de forma horizontal */
+  text-align: center;
+  /* Si ponemos 50% el cuadrado se convierte en círculo */
+  border-radius: 50%;
+  /* Trasladamos solo en el eje vertical */
+  transform: translate(0, -50%);
+  color: white;
+}
+@media all and (min-width: 768px) {
+  .footer {
+    /* Ahora en fila pero al revés de lo que saldrían, R a la derecha, copy izquierda */
+    flex-direction: row-reverse;
+    /* Mandamos uno para cada punta */
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 25px;
+  }
+  .icon {
+    /* La R ya no se superpone a la línea, quitamos el transform */
+    transform: none;
+  }
+}

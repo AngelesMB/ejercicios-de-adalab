@@ -1,0 +1,10 @@
+/* Crea un texto que ocupe el 86% de la pantalla y esté centrado horizontalmente dentro del body. Usaremos la propiedad max-width para dar un ancho máximo de 600px. */
+p {
+    width: 86%;
+    max-width: 600px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* Opción SIN posicionamiento */
+    /* margin: 0 auto; */
+}

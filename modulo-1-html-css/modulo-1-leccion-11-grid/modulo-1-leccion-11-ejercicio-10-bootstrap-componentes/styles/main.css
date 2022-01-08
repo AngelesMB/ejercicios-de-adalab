@@ -1,0 +1,8 @@
+.header {
+    background-color: rgb(230, 227, 227);
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}

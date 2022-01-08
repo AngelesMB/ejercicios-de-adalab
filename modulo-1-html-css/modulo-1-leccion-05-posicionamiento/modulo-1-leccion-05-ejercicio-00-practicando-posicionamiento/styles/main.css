@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  background-color: rgb(168, 168, 228);
+  width: 100%;
+}
+/* Con absolute, el contenido de menu se posiciona donde queremos pero se escapa del flujo y de su contenedor */
+/* Al ser ABSOLUTE pierde su propiedad 'block', pasa a ocupar su contenido. Esto no pasa con RELATIVE. Así que debemos decirle qué espacio queremos que ocupe*/
+.menu {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: hotpink;
+}
+/* Así que debemos modificar o la altura del header o las características del menú para conseguir que su altura sea la adecuada */
+.header {
+  height: 80px;
+}
+.flotante {
+  background-color: hotpink;
+  /* Al hacer el scale se achica la imagen y su div contenedor pero no son de las mismas proporciones, el div sigue siendo block  */
+  transform: scale(0.3) translate(99%, 0);
+}
+.img-no-flotante {
+  /* Diferencia, mismo valor transform pero fuera de un div */
+  transform: scale(0.3) translate(99%, 0px);
+}
+.cookies {
+  position: fixed;
+  bottom: 0;
+  /* FIXED también pierde su block así que le damos ancho */
+  width: 100%;
+  background-color: indianred;
+}

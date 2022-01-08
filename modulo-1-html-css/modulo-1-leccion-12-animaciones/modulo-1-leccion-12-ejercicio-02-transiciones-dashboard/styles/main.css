@@ -1,0 +1,41 @@
+body {
+  background: #14d9c4;
+  font-family: arial, sans-serif;
+  margin: 0;
+}
+
+.boxes {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.box {
+  background: #d0f7f3;
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  box-sizing: border-box;
+  /* Tendréis que aplicar unas transiciones para suavizar los efectos que se modifican al hacer hover: */
+  transition: background 0.5s, box-shadow 2s;
+}
+
+.box:hover {
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.box__label {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  font-size: 9px;
+  text-transform: uppercase;
+}

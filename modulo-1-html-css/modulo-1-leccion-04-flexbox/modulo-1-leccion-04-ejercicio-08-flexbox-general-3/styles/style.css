@@ -1,0 +1,48 @@
+header {
+  width: 100%;
+  background-color: rgb(61, 53, 53);
+  color: white;
+}
+/* Otra opción para no centrar usando el div podría ser quitar el div, darle el flex al header y luego ponerle padding de por ej 100px left y right al header */
+.div-header {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+li {
+  margin-left: 5px;
+}
+main {
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  width: 100%;
+}
+.div-footer {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}

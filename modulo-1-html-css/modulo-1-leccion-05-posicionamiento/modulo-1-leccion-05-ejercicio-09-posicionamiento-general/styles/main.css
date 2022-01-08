@@ -1,0 +1,27 @@
+body {
+  border: 8px solid black;
+}
+div {
+  margin-top: 106px;
+  position: absolute;
+  /* Centramos en la página */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.nombre {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+.parrafo {
+  font-size: 18px;
+  margin-bottom: 27px;
+}
+a {
+  padding: 8px 16px;
+  margin-left: -16px;
+}

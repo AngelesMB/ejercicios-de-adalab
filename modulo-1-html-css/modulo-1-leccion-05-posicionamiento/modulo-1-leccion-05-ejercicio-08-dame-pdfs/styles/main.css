@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.upload {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  height: 5vh;
+  /* width: 500px; */
+}
+a {
+  text-decoration: none;
+  color: gray;
+  font-size: large;
+}
+p {
+  margin: 10px;
+  background-color: red;
+  border-radius: 5px;
+  width: 30px;
+  height: 20px;
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  /* Si le damos width al div upload entonces tenemos que dar ubicación de nuestro p usando relative */
+  /*position: relative;
+  top: -20px;
+  left: 470px; */
+}

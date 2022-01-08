@@ -1,0 +1,66 @@
+/* Comentar el CSS que no se puede tocar y reescribirlo usando solo selectores de clase, es decir, sin utilizar selectores de etiqueta. */
+
+/* div.news {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+} */
+/* ¿Por qué los enlaces son verdes y no rojos? */
+/* Mayor especificidad del selector del rojo */
+/* a {
+  color: red;
+}
+div.news div.news__item {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 10px;
+}
+div.news div.news__item + div.news__item {
+  border-top: 1px solid #ccc;
+}
+div.news div.news__item:nth-child(2n) {
+  background: #eee;
+}
+div.news div.news__item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+div.news div.news__item h2.news__item-title {
+  margin: 0 0 0.25em;
+  font-size: 20px;
+}
+div.news div.news__item a.news__item-link {
+  color: green;
+} */
+
+/* ------------------------------------------------------------------ */
+/* Nuevos estilos a partir de esta línea */
+
+.news {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+.news .news__item {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 10px;
+}
+.news .news__item + .news__item {
+  border-top: 1px solid #ccc;
+}
+.news .news__item:nth-child(2n) {
+  background: #eee;
+}
+.news .news__item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+.news .news__item .news__item-title {
+  margin: 0 0 0.25em;
+  font-size: 20px;
+}
+.news .news__item .news__item-link {
+  color: green;
+}

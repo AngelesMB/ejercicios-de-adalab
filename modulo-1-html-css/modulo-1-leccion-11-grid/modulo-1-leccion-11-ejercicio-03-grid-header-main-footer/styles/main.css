@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+.wrapper {
+  height: 100vh;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 20vh 60vh 20vh;
+}
+
+.item {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item1 {
+  background-color: pink;
+  grid-column: span 12;
+}
+.item2 {
+  background-color: purple;
+  grid-column: span 3;
+ 
+}
+.item3 {
+  background-color: orangered;
+  grid-column: span 9;
+}
+.item4 {
+  background-color: blue;
+  grid-column: span 12;
+}

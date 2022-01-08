@@ -1,0 +1,34 @@
+span,
+p {
+  background-color: #a0c5e9;
+}
+
+.info {
+  background-color: transparent;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+}
+
+/*Prepara tres divs con un tamaño de 100x100, cambia sus displays (block, inline, inline-block, none) y observa como se comportan.*/
+.red {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.blue {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.green {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}

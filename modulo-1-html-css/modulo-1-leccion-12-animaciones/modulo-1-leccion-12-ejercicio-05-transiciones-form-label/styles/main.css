@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 300px;
+  height: 400px;
+}
+.title {
+  text-align: center;
+  color: rgb(35, 104, 81);
+}
+.button {
+  background-color: rgb(35, 104, 81);
+  color: white;
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+.inputContainer {
+  position: relative;
+  margin-top: 30px;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+.label {
+  font-size: 18px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  transition: all 0.15s ease-in-out 0s;
+}
+/* ~ sibling combinator. Cuando el focus esté en el input, su hermana con clase label seguirá otras reglas */
+.input:focus ~ .label {
+  top: -10px;
+  left: 0;
+  font-size: 12px;
+}

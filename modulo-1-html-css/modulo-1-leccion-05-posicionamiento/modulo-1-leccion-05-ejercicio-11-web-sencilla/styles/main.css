@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #40e0d0;
+  padding-bottom: 10px;
+  height: 5vh;
+}
+main {
+  background-color: thistle;
+}
+footer {
+  background-color: turquoise;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  margin: 0 5px;
+}
+.cookies {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: tomato;
+  width: 45%;
+}

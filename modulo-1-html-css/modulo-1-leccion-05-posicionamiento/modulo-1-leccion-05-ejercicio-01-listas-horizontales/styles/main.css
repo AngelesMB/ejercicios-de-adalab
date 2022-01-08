@@ -1,0 +1,6 @@
+ul {
+  width: 20%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,76 @@
+.menu {
+  /* Ponemos items menú uno al lado del otro y quitamos bullets */
+  display: flex;
+  list-style-type: none;
+}
+.menu__item {
+  /* Damos padding para aprovechar el área clickable */
+  padding: 5px;
+  margin: 2px;
+  background-color: aqua;
+  /* Propiedad que va a transicionar, cómo lo hará y en cuánto tiempo */
+  transition: color linear 1s, font-size linear 1s;
+
+  /* La primera, es lo mismo que ponerlo así sin el atajo*/
+  /* transition-property: color;
+    transition-timing-function: linear;
+    transition-duration: 2s;  */
+
+  /* También se puede poner 'all' en lugar de una detrás de otra */
+  transition: all linear 1s;
+}
+.menu__item:hover {
+  color: white;
+  font-size: 20px;
+}
+
+@keyframes accordion {
+  /* Características desde donde parte From-inicio*/
+  from {
+    /* transform: scaleY(1); */
+    height: 200px;
+  }
+  /* Características a donde llegará  To-fin*/
+  to {
+    /* transform: scaleY(1.5); */
+    height: 400px;
+  }
+}
+
+.box {
+  width: 400px;
+  height: 200px;
+  background-color: burlywood;
+  /* Chuleta atajo animación */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: accordion 2s linear 5;
+}
+
+/* Queremos que la caja se mueva de una esquina a otra, tendremos que definir más de 2 puntos, no nos vale from to sino que lo dividimos en %*/
+@keyframes rotateBox {
+  0% {
+    transform: translate(0) rotate(180deg);
+    background-color: pink;
+  }
+  25% {
+    transform: translateX(500px);
+    background-color: palevioletred;
+  }
+  50% {
+    transform: translate(500px, 500px);
+    background-color: rebeccapurple;
+  }
+  /* No hace falta poner 100% porque vuelve automáticamente al estado inicial */
+  75% {
+    transform: translate(0, 500px);
+    background-color: purple;
+  }
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: burlywood;
+  /* Queremos que no deje de ejecutarse > infinite */
+  animation: rotateBox 5s linear infinite;
+}

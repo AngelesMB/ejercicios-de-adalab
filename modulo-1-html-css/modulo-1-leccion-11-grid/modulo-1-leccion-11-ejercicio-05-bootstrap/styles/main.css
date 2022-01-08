@@ -1,0 +1,18 @@
+* {
+  text-align: center;
+}
+.header {
+  background-color: burlywood;
+  height: 20vh;
+}
+.menu {
+  background-color: coral;
+  height: 60vh;
+}
+.aside {
+  background-color: darkcyan;
+}
+.footer {
+  background-color: darkgreen;
+  height: 20vh;
+}

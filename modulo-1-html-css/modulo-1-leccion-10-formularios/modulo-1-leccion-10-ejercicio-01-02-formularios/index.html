@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <!-- Vamos a practicar con nuestro primer formulario. En primer lugar, vamos a maquetar una página web con un formulario con los siguientes campos (de distintos tipos, para practicarlos todos). Ahora, es importante que en la etiqueta <form> pongamos la dirección https://adalab-server-form.herokuapp.com/ en el atributo action para que se envíen los datos del formulario a un servidor que hemos preparado en Adalab que mostrará lo que envía el navegador al pulsar en el botón submit. Y podemos probar a alternar los valores GET y POST para el atributo method del formulario e investigamos la diferencia. -->
+    <!-- Vamos a añadir un atributo required a todos los campos del ejercicio anterior excepto al apellido.
+    Además añadiremos un valor por defecto a la ciudad y al país para poner Madrid y España.
+    Para comprobar que funciona correctamente intentaremos enviar el formulario sin rellenar ningún campo y ver si nos muestra el error. -->
+    <form action="https://adalab-server-form.herokuapp.com/" method="POST">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" required />
+      <label for="surname">Apellido</label>
+      <input type="text" id="surname" name="surname" />
+      <label for="emailAddress">Correo electrónico</label>
+      <input type="email" id="emailAddress" name="emailAddress" required />
+      <label for="street">Calle</label>
+      <input type="text" id="street" name="street" required />
+      <label for="city">Ciudad</label>
+      <input type="text" id="city" name="city" required />
+      <label for="province">Provincia</label>
+      <input
+        type="text"
+        id="province"
+        name="province"
+        value="Madrid"
+        required
+      />
+      <label for="country">País</label>
+      <input type="text" id="country" name="country" value="España" required />
+      <label for="id">DNI</label>
+      <input type="text" id="id" name="id" required />
+      <label for="telephone">Teléfono</label>
+      <input type="tel" id="telephone" name="telephone" required />
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" required />
+      <label for="passwordConfirmation">Confirmar contraseña</label>
+      <input
+        type="password"
+        id="passwordConfirmation"
+        name="passwordConfirmation"
+      />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

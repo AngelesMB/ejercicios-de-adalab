@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+h1 {
+  padding: 30px;
+}
+.firstParagraph {
+  width: 400px;
+  padding: 30px;
+}
+.container {
+  padding: 30px;
+}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Posicionamos texto tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Mostramos texto cuando hacemos hover sobre el container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(148, 219, 148);
+}

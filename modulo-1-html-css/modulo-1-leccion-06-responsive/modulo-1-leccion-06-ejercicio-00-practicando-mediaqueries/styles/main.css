@@ -1,0 +1,34 @@
+.container {
+  background-color: azure;
+  display: flex;
+  /* Aunque los article son block y se colocarán por default en columna, lo especificamos para poder centrar y reubicar con justify-content... */
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hijo {
+  background-color: blueviolet;
+  margin: 2px;
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    /* Cuando la pantalla crezca queremos en lugar de una columna de bloques dos filas */
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .hijo {
+    /* Limitamos el ancho para que se coloquen en dos filas */
+    background-color: cadetblue;
+    width: 45%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .container {
+    /* Cuando la pantalla crezca queremos en lugar de dos filas, una fila con todos los bloques uno al lado del otro */
+    flex-wrap: nowrap;
+  }
+  /* Otra opción sería darles un ancho menor */
+  /* .hijo {
+    width: 20%;
+  } */
+}

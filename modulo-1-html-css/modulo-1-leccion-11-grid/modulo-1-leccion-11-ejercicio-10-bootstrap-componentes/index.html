@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Llamamos a bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Bootstrap componentes</title>
+  </head>
+  <body>
+    <!-- Ahora vamos a explorar las posibilidades de Bootstrap que, además del sistema de columnas, nos ofrece una serie de componentes ya definidos para que apliquemos clases CSS pre-diseñadas a nuestros elementos. Vamos a usar al menos los componentes de botones (buttons) y tarjetas (cards). -->
+    <div class="container-fluid">
+      <div class="col-12 header">
+        <h1>Pricing</h1>
+        <p>
+          Quickly build an effective pricing table for your potential customers
+          with this Bootstrap example. It's built with default Bootstrap
+          components and utilities with little customization.
+        </p>
+      </div>
+      <div class="container">
+        <!-- card 1 -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Free</h5>
+            <ul class="card-text">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-outline-primary">
+              Sign up for free
+            </button>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Pro</h5>
+            <ul class="card-text">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-primary">Get started</button>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Enterprise</h5>
+            <ul class="card-text">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+/* Probar a:
+   - Añadir un padding de 10px
+   - Añadir un borde de 5px
+   - Cambiar el modelo de caja a border-box y explica qué ha pasado
+   - Centrar la caja utilizando el valor auto en los margenes horizontales. */
+
+div {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: solid 5px black;
+  box-sizing: border-box;
+}

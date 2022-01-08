@@ -1,0 +1,5 @@
+/* Con el selector universal * le decimos que nada tendrá margen ni padding, quitamos los estilos que vienen por default */
+* {
+  margin: 0;
+  padding: 0;
+}

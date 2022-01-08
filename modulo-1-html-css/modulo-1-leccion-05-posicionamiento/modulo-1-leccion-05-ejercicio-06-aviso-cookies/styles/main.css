@@ -1,0 +1,17 @@
+/* Usando posicionamiento fixed, tenemos que fijar este div en la parte inferior de la página de modo que se visualize siempre, aún cuando hagamos scroll. */
+body {
+  margin: 0;
+}
+.cookies {
+  height: 100px;
+  background-color: rgb(231, 231, 144);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+header {
+  background-color: wheat;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

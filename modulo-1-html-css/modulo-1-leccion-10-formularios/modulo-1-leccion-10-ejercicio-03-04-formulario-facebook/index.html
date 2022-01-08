@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Formulario Facebook</title>
+  </head>
+  <body>
+    <!-- En este ejercicio vamos a crear el formulario de Facebook. Para crearlo utilizaremos lo que hemos visto hasta ahora de formularios. El formulario en sí será el que se muestra en la imagen inferior. El objetivo es crear sólo el HTML pero si te atreves puedes probar también a realizar un CSS similar. -->
+    <h2>Create an account</h2>
+    <h4>It's free and always will be.</h4>
+    <form action="#">
+      <label for="name" class="label hidden"></label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="inlineField"
+        placeholder="First name"
+      />
+
+      <label for="surname" class="label hidden"></label>
+      <input
+        type="text"
+        name="surname"
+        id="surname"
+        class="inlineField"
+        placeholder="Surname"
+      />
+
+      <label for="email" class="label hidden"></label>
+      <input
+        type="text"
+        name="usernameEmail"
+        id="username"
+        placeholder="Email or mobile number"
+        class="longerField"
+      />
+
+      <label for="emailConfirmation" class="label hidden"></label>
+      <input
+        type="text"
+        name="usernameEmailConfirmation"
+        id="usernameConfirmation"
+        placeholder="Re-enter email or mobile number"
+        class="longerField"
+      />
+
+      <label for="password" class="label hidden"></label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="New password"
+        class="longerField"
+      />
+
+      <label for="birthday" class="label">Birthday</label>
+      <input
+        type="number"
+        id="birthday"
+        placeholder="Day"
+        min="1"
+        max="31"
+        class="inlineField"
+      />
+
+      <select id="month" name="birthday" class="inlineField">
+        <option selected hidden>Month</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+
+      <input
+        type="number"
+        placeholder="Year"
+        min="1930"
+        max="2021"
+        step="1"
+        class="inlineField"
+      />
+      <label for="profile">Description:</label>
+      <textarea name="profile" id="profile" cols="30" rows="10"></textarea>
+      <div class="gender-container">
+        <label for="gender1" class="label inlineField"
+          ><input
+            type="radio"
+            name="gender"
+            id="gender1"
+            value="Female"
+            class="inlineField"
+          />Female</label
+        >
+        <label for="gender2" class="label inlineField"
+          ><input
+            type="radio"
+            name="gender"
+            id="gender2"
+            value="Male"
+            class="inlineField"
+          />Male</label
+        >
+      </div>
+      <div class="terms-container">
+        <input type="checkbox" name="terms" id="terms" class="inlineField" />
+        <label for="terms" class="inlineField"
+          >I accept terms and conditions.</label
+        >
+      </div>
+      <input type="submit" value="Create an account" />
+      <input type="reset" value="Clear fields" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+/* Partiendo del ejercicio 2 vamos a hacer uso de la herencia, y utilizando un solo selector de css vamos a hacer que:
+-el tamaño de fuente de la página sea de 18px
+-el tipo de fuente sea Tahoma
+-el color de fuente sea rebeccapurple
+-el color de fondo sea mediumpurple
+-el interlineado sea de 1.5
+Pista: Tenemos que trabajar con la primera etiqueta del contenido de html que es <body>, y utilizar el selector de etiqueta para que todas sus hijas anidadas hereden de ella. */
+
+body {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rebeccapurple;
+  background-color: mediumpurple;
+  line-height: 1.5;
+}

@@ -1,0 +1,24 @@
+/* Cuando hagamos hover sobre el body el popup vuelve para arriba */
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Para quitar el scroll vertical escondemos el overflow */
+  overflow: hidden;
+}
+
+.popup {
+  width: 200px;
+  height: 200px;
+  background-color: salmon;
+  transform: translateY(120vh);
+  transition: all 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body:hover .popup{
+  transform: translateY(0vh);
+}

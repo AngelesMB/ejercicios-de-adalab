@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://picsum.photos/2000/2000);
+}
+.title {
+  color: white;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation: enterTitle 2s 1 linear;
+}
+@keyframes enterTitle {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    /* 0 en relación a sí mismo, a su posición inicial, no al eje y de la página */
+    transform: translateY(0);
+  }
+}

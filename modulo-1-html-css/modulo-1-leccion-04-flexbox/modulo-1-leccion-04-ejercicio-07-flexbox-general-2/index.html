@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <!-- Convertir la imagen anterior a código usando HTML y CSS y lo que habéis aprendido hoy de Flexbox. Los requisitos son los siguientes:
+    - En este caso si el tamaño de la ventana aumenta solo aumentará el tamaño del bloque central, el bloque gris de la izquierda y el grupo que compone la puntuación, texto y estrella de la derecha siempre tendrán el mismo tamaño.
+    - El ancho del conjunto entero debe ser del 100% con un ancho máximo de 840px. Para el bloque gris de la izquierda debéis buscar una imagen cuadrada y colocarla ahí-->
+    <main class="container">
+      <section class="container-img"></section>
+      <section class="container-middle">
+        <p>Centro de fisioterapia Guzmán Fernández</p>
+        <p class="p-gray">Fisioterapia General</p>
+        <section>
+          <button>Reservar cita</button>
+          <button>Pedir presupuesto</button>
+        </section>
+      </section>
+      <section class="container-ranking">
+        <section class="ranking-comments">
+          <div>24 valoraciones</div>
+          <div>Ver comentarios</div>
+        </section>
+        <section class="ranking-stars">
+          <div class="container-sm-points"><p>8,9</p></div>
+          <div class="container-sm-stars">
+            <img class="img-star" src="./images/star.png" alt="" />
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
