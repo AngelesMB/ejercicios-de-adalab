@@ -1,0 +1,13 @@
+.extraClass {
+  background-color: aquamarine;
+  transform: scale(1.2);
+}
+/* -------------------------------------------------------- */
+.fruit {
+  padding: 6px;
+  cursor: pointer;
+  border-bottom: 3px solid #b9b8ba; /* grey */
+}
+.fruit--selected {
+  border-bottom: 3px solid #64dac4; /* green */
+}

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form {
+  width: 170px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.smiley {
+  font-size: 60px;
+}
+.form__select {
+  border-radius: 5px;
+  width: 70px;
+  height: 25px;
+}
+.form__button {
+  background-color: #008de3;
+  color: white;
+  border-radius: 5px;
+  width: 70px;
+  height: 25px;
+}
+.yellow {
+  background-color: #ffcc00;
+}
+.orange {
+  background-color: #ff9900;
+}

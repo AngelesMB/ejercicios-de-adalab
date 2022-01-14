@@ -1,0 +1,9 @@
+.buttonA,
+.buttonB {
+  padding: 30px;
+  border: 3px solid lightcoral;
+  background-color: rgb(250, 185, 185);
+}
+.hidden {
+  opacity: 0.3;
+}

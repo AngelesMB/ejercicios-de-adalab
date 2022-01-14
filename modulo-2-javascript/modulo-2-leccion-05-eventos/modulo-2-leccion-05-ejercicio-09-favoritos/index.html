@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Favoritos</title>
+  </head>
+  <body>
+    <!-- Hemos preparado un HTML con tres tarjetas. Al pinchar en un elemento del listado tenemos que:
+    Añadir la clase .teacher--selected si no la tiene, o quitarla si la tiene.
+    Modificar el texto del span .favorite sustituyéndolo por 'Quitar' si en ese momento contiene 'Añadir', o por 'Añadir' si contiene 'Quitar'. -->
+    <ul class="teachers">
+      <li class="teacher teacher--isra">
+        <div>Isra</div>
+        <img class="teacher__img" src="https://www.fillmurray.com/400/400" />
+        <div class="favorite">Añadir</div>
+      </li>
+      <li class="teacher teacher--tuerto">
+        <div>¿Barlos?</div>
+        <img class="teacher__img" src="https://www.placecage.com/400/400" />
+        <div class="favorite">Añadir</div>
+      </li>
+      <li class="teacher teacher--nasi">
+        <div>Nasi</div>
+        <img class="teacher__img" src="https://www.placecage.com/gif/400/400" />
+        <div class="favorite">Añadir</div>
+      </li>
+    </ul>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
