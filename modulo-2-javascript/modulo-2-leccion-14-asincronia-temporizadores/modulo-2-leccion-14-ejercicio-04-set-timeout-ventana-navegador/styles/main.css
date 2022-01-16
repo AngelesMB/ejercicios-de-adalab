@@ -1,0 +1,16 @@
+.container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup {
+  width: 350px;
+  height: 200px;
+  background-color: lavenderblush;
+  z-index: 3;
+  transform: translateY(-200%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

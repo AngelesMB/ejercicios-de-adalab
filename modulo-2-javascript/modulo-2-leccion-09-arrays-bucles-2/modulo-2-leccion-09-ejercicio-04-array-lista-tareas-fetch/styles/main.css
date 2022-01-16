@@ -1,0 +1,6 @@
+.listItem {
+  list-style-type: decimal-leading-zero;
+}
+.completed {
+  text-decoration: line-through;
+}

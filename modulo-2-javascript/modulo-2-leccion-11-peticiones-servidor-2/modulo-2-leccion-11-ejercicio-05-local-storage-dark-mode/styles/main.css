@@ -1,0 +1,19 @@
+body {
+  background-color: antiquewhite;
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+.darkBackground {
+  background-color: rgb(51, 46, 46);
+}
+.lightText {
+  color: whitesmoke;
+}
+.lightBackground {
+  background-color: rgb(245, 244, 244);
+}
+.darkText {
+  color: rgb(51, 13, 87);
+}
