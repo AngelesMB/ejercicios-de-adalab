@@ -1,0 +1,12 @@
+.task {
+  color: red;
+}
+
+.done {
+  color: green;
+  text-decoration: line-through;
+}
+
+label {
+  display: block;
+}
