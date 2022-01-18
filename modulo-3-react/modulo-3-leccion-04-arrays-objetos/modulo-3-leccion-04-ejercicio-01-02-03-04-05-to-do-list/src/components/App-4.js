@@ -19,7 +19,7 @@ function App() {
   const handleAddClick = () => {
     const newObject = {
       // Como la usuaria no nos da un id seguimos el orden consecutivo
-      id: tasks.length + 1,
+      id: tasks.length,
       task: newTask,
       completed: false,
     };
