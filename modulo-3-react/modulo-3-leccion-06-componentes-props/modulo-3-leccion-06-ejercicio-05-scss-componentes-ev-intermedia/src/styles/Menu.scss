@@ -1,0 +1,12 @@
+.header-menu {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 13px;
+  &-item,
+  &-item:visited {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #4a4a4a;
+    padding: 0 10px;
+  }
+}

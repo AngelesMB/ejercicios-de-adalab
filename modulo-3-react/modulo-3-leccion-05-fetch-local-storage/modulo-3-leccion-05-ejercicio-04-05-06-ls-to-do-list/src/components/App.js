@@ -23,11 +23,13 @@ function App() {
 
   // Función para agregar tarea
   const handleAddClick = () => {
-
-    const newId = tasks.reduce( (record,eachTask) => record > eachTask.id ? record : eachTask.id, 0)
-
+    // reduce para encontrar el id más alto y sumarle uno, así nunca coincidirán los ids ni habrá problemas al borrar elem (vs usar tasks.length)
+    const newId = tasks.reduce(
+      (record, eachTask) => (record > eachTask.id ? record : eachTask.id),
+      0
+    );
     const newObject = {
-      id: newId +1, //tasks.length,
+      id: newId + 1,
       task: newTask,
       completed: false,
     };
@@ -48,7 +50,9 @@ function App() {
   const handleClick = (ev) => {
     const clickedTaskId = parseInt(ev.currentTarget.id);
     // Usamos el idClickado como index en el array e invertimos ! su propiedad completed
-    const foundIndex = tasks.findIndex(eachTask=> eachTask.id === clickedTaskId)
+    const foundIndex = tasks.findIndex(
+      (eachTask) => eachTask.id === clickedTaskId
+    );
     tasks[foundIndex].completed = !tasks[foundIndex].completed;
     setTasks([...tasks]);
   };
@@ -57,7 +61,9 @@ function App() {
     const clickedTaskId = ev.currentTarget.id;
     // tasks.splice(clickedTaskId, 1)
     // setTasks([...tasks])
-    setTasks(tasks.filter((eachTask) => eachTask.id !== parseInt(clickedTaskId)));
+    setTasks(
+      tasks.filter((eachTask) => eachTask.id !== parseInt(clickedTaskId))
+    );
   };
 
   // Renderizar título

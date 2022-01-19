@@ -1,0 +1,19 @@
+.main {
+  height: 100vh;
+  background-color: #3cdbc0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-title {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    word-spacing: 100vw;
+    text-transform: capitalize;
+  }
+}
+@media all and (min-width: 768px) {
+  .main-title {
+    font-size: 40px;
+  }
+}

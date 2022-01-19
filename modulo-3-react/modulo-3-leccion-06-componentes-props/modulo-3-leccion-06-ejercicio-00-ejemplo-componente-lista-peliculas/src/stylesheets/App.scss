@@ -1,0 +1,17 @@
+@import 'core/variables';
+@import 'core/page';
+@import 'core/darkmode';
+
+/* Mis estilos para App */
+
+.col2 {
+  position: relative;
+  padding-bottom: 1.5em;
+}
+
+.form__error {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: var(--orange);
+}
