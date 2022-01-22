@@ -1,0 +1,18 @@
+.form {
+  background-color: rgb(223, 248, 237);
+  height: 100px;
+  width: 700px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  &__label {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input {
+    width: 280px;
+  }
+}

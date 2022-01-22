@@ -1,0 +1,18 @@
+.table {
+  width: 700px;
+  border-collapse: collapse;
+  &__header {
+    text-align: center;
+    background-color: rgb(223, 248, 237);
+    font-size: 18px;
+    height: 30px;
+  }
+  &__column {
+    width: 200px;
+  }
+  &__row {
+    border-bottom: 1px solid rgb(177, 170, 170);
+    height: 55px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(226, 220, 220);
+  &__container {
+    width: 700px;
+    text-align: center;
+  }
+}
