@@ -1,0 +1,1 @@
+## Ejemplo contador con lifting hecho en clase
