@@ -1,4 +1,5 @@
 **1. Crear el componente Preview**
+
 Lo primero que te pedimos es que te copies este código en un proyecto de React y lo arranques para ver cómo funciona.
 A continuación empezaremos por la pieza más sencilla, la única que solo tiene props y no tiene lifting: el preview.
 
@@ -11,6 +12,7 @@ A continuación empezaremos por la pieza más sencilla, la única que solo tiene
 6. Cambia un poco la función renderPaymentTypeText para que use la prop.paymentType en vez de la constante paymentType.
 
 **2. Crear el componente InputGroupText (guarrete)**
+
 Ahora lo vamos a complicar un poquito. Vamos a crear el componente InputGroupText que tiene que recibir props y además hacer lifting.
 En este ejercicio queremos:
 
