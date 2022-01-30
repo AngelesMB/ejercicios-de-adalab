@@ -1,0 +1,13 @@
+.email {
+  &__body {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-right: 20px;
+    &--container {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
