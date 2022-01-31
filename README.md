@@ -28,6 +28,8 @@
 
 1.12 Transiciones/Animaciones
 
+---
+
 **Módulo 2: JavaScript**
 
 2.1 Introducción a la programación
@@ -58,6 +60,8 @@
 
 2.14 Asincronía y temporizadores
 
+---
+
 **Módulo 3: React JS**
 
 3.1 Mi primera web en React
@@ -79,6 +83,8 @@
 3.9 Buenas prácticas
 
 3.10 Testing
+
+---
 
 **Módulo 4: Back-End: Node JS, Express JS y SQL**
 
