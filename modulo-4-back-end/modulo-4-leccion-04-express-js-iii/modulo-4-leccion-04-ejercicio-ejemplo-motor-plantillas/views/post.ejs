@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Post</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Adablog Entrada</h1>
+    </header>
+    <main>
+      <h1><%= title %></h1>
+      <p><%= brief %></p>
+      <!-- Comprobamos tipo de tags por si estuviera vacía -->
+      <% if (typeof tags !== "undefined"){%>
+      <p><%= tags %></p>
+      <%}%>
+      <!-- forEach para recorrer array de datos -->
+      <% catList.forEach(function(cat){%>
+      <p><%= cat %></p>
+      <%})%>
+    </main>
+  </body>
+</html>
