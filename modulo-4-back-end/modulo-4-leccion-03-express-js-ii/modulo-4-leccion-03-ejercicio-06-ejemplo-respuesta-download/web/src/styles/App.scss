@@ -1,0 +1,46 @@
+* {
+  color: #d1d1d1;
+  font-family: "Rubik", "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+:root {
+  --background: #1e1e1e;
+  --blue: #14d9c4;
+  --darkblue: #099d8d;
+  --orange: #d96314;
+  --almostwhite: #aeaeae;
+  --monospace: "Inconsolata", monospace;
+}
+
+body {
+  padding: 20px;
+  background-color: var(--background);
+}
+
+pre,
+.monospaced {
+  font-family: var(--monospace);
+}
+
+main {
+  padding: 20px;
+  color: #ddd;
+}
+
+button {
+  border: 2px solid var(--blue);
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-radius: 5px;
+  background-color: var(--background);
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  margin-left: 2px;
+  margin-top: 2px;
+}
