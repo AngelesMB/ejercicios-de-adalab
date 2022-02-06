@@ -1,4 +1,4 @@
-## 1.Crea una plantilla para directoras
+## 1. Crea una plantilla para directoras
 
 - Añade un fichero en `src/directors-data.json` con datos sobre dos directoras.
 - Añade a `src/index.js` un nuevo endpoint del tipo `app.get('/es/directora/:directorId', ...)` para gestionar peticiones del tipo `http://localhost:3000/es/directora/iciar-bollain`.
