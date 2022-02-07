@@ -55,13 +55,8 @@ const handleWrite = (err) => {
   }
 };
 
-// guardar usuarios en txt
-server.get("/users/save", (req, res) => {
-  fs.writeFile("./src/users.txt", JSON.stringify(users), handleWrite);
-  res.json({ result: "OK" });
-});
-
 //exportar usuarios
 server.get("/users/export", (req, res) => {
-  res.download(__dirname + "/users.txt", "listado.txt");
+  fs.writeFileSync("users.txt", JSON.stringify(users), handleWrite);
+  res.download("users.txt", "listado.txt");
 });

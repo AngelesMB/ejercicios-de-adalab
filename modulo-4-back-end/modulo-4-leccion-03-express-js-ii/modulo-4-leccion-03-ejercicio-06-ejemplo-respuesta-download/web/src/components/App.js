@@ -42,7 +42,6 @@ function App() {
         <input type="text" value={name} onChange={handleChange}></input>
         <button onClick={handleAdd}>Agregar Usuario</button>
         <button onClick={handleFetch}>Listado usuarios</button>
-        <a href="http://localhost:3001/users/save">Guardar</a>
         <a href="http://localhost:3001/users/export">Descargar</a>
       </main>
     </div>
