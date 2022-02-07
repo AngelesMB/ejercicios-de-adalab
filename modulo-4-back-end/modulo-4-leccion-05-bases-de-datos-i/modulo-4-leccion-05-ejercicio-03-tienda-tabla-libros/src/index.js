@@ -43,7 +43,7 @@ app.get("/all-books-with-available-stock/all-fields", (req, res) => {
 
 app.get("/all-books-paper-and-available-stock/all-fields", (req, res) => {
   const query = db.prepare(`SELECT * FROM books WHERE stock > 0 AND ebook = ?`);
-  const user = query.all("yes");
+  const user = query.all(0);
   res.json(user);
 });
 
