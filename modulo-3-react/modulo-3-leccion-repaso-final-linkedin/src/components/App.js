@@ -1,4 +1,4 @@
-import "../styles/App.css";
+// import "../styles/App.css";
 import { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import callToApi from "../services/contactsApi";

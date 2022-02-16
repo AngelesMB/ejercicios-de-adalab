@@ -26,7 +26,7 @@
 
 1.11 Grid
 
-1.12 Transiciones/Animaciones
+1.12 Transiciones y Animaciones
 
 ---
 
