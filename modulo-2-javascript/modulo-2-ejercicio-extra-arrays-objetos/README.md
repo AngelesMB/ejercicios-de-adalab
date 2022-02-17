@@ -3,7 +3,7 @@
 Os proponemos unos ejercicios super entrenidos para dominar las estructuras de datos complejas:
 
 - Partiendo de los ficheros index.html y main.js de esta carpeta os pedimos que hagáis diferentes ejercicios.
-- En todos ellos os mostramos el código resultante del ejercicio que deberíais generar y añadir con innerHTML en el div <div class="js-result" />.
+- En todos ellos os mostramos el código resultante del ejercicio que deberíais generar y añadir con innerHTML en el div `<div class="js-result" />`.
 - Deberíais añadir vuestro código a main.js.
 - No es necesario que modifiquéis el fichero index.html.
 - Para practicar podéis hacer todos los ejercicios con for clásico y luego cambiarlo a for ... of para entender la diferencia entre uno y otro.
