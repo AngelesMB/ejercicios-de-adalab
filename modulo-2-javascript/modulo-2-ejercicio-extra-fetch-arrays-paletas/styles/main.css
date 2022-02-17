@@ -1,0 +1,20 @@
+.box {
+  width: 120px;
+  height: 80px;
+  display: inline-block;
+  border-top: 0.3px solid rgb(230, 230, 230);
+  border-bottom: 0.3px solid rgb(230, 230, 230);
+}
+.container {
+  margin-left: 5px;
+}
+.palette {
+  padding: 5px;
+  cursor: pointer;
+  width: 650px;
+  margin: 5px;
+}
+.favorite {
+  background-color: rgb(187, 236, 248);
+  border-radius: 5px;
+}
