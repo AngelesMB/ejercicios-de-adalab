@@ -1,0 +1,17 @@
+{
+  "name": "linkedlin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "publish-react": "cd web_react && npm run build && cd .. && rm -rf ./src/public && mv ./web_react/build ./src/public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
